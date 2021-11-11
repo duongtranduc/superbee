@@ -15,8 +15,8 @@ workflows:
         APP_STORE_CONNECT_KEY_IDENTIFIER: "S987ULB824"
         APP_STORE_CONNECT_ISSUER_ID: "14b88b2d-03aa-479c-b6d7-8782ce801319"
         APP_STORE_APP_ID: "1594596994"
-        # APPLE_ID_EMAIL: duongtranduc@gmail.com # <-- Put your encrypted Apple Id email address here
-        # APP_SPECIFIC_PASSWORD: Matkhaumoi@123
+        APPLE_ID_EMAIL: "duongtranduc@gmail.com" # <-- Put your encrypted Apple Id email address here
+        APP_SPECIFIC_PASSWORD: "Matkhaumoi@123"
 
       xcode: latest
       cocoapods: default
