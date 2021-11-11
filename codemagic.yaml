@@ -27,14 +27,11 @@ workflows:
           source: true
     scripts:
       - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
-        script: |
-                    keychain initialize
+        script: keychain initialize
       - name: Fetch signing files
-        script: |
-                    app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
+        script: app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
       - name: Add certificates to keychain
-        script: |
-                    keychain add-certificates 
+        script: keychain add-certificates 
       - name: Increment build number
         script: agvtool new-version -all $(($BUILD_NUMBER +1))
       - name: Set up code signing settings on Xcode project
