@@ -1,4 +1,4 @@
-BUNDLEID=com.superbee.halloumi
+BUNDLEID=com.apolloplanet.superbee
 XCPROJECT=-project PTPlayer.xcodeproj
 XCWORKSPACE=-workspace PTPlayer.xcodeproj/project.xcworkspace
 ARCHIVEPATH=-archivePath bin/PZPlayer.xcarchive
